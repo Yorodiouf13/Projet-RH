@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: poppins;
+}
+html{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    scroll-behavior: smooth;
+}
+body{
+    background:  #090261;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    padding-top: 05px;
+}
+
+.img {
+    padding-top: 0px;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.nav-bar ul{
+    display: flex;
+}
+.nav-bar ul li a {
+    display: block;
+    color: black;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: .2s;
+}
+.nav-bar ul li a:hover{
+    color: black;
+    background: #eee;
+}
+.nav-bar ul li a.active{
+    background-color: #eee;
+}
+.login{
+    padding-left: 20px;
+}
+.nav-bar ul li a.navlogin{
+    color: #eee;
+    background-color: #090261;
+    transition: .5s;
+}
+.nav-bar ul li a.navlogin:hover{
+    background-color: #eee;
+    color: black;
+}
+.login-header{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: content;
+    padding-left: 100px;
+    padding-top: 80px;
+    background-color: white;
+}
+.login-header h1{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.login-header p{
+    margin-top: 20px;
+    opacity: .7;
+}
+
+.login-right{
+    display: flex;
+    justify-content: center;
+}
+.login-right img{
+    width: 100%;
+}
+
+button{
+    border: none;
+    padding: 1rem;
+    height: 55px;
+    font-size: 18px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 30px;
+    transition: .5s;
+}
+
+button:hover{
+    background: grey;
+    color: #ffffff;
+}
+::placeholder{
+    color: grey;
+    font-size: 1rem;
+}
+
+.Bienvenue {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: content;
+    padding-left: 100px;
+    padding-top: 80px;
+    background-color:  #090261;
+    animation: slide 1s 1 alternate-reverse linear ;
+}
+   
+.Bienvenue h1{
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.Bienvenue p{
+    color: #eee;
+    margin-top: 20px;
+    opacity: .7;
+}
+.Bienvenue h2{
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+@keyframes slide {
+    0%{transform: translate(0,0)}
+    100%{transform: translate(1000px,0)}
+}

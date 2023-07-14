@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: poppins;
+}
+html{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    scroll-behavior: smooth;
+}
+body{
+    background: #090261;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    padding-top: 05px;
+}
+
+.img {
+    padding-top: 0px;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.nav-bar ul{
+    display: flex;
+}
+.nav-bar ul li a {
+    display: block;
+    color: black;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: .2s;
+}
+.nav-bar ul li a:hover{
+    color: black;
+    background: #eee;
+}
+.nav-bar ul li a.active{
+    background-color: #eee;
+}
+.login{
+    padding-left: 20px;
+}
+.nav-bar ul li a.navlogin{
+    color: #eee;
+    background-color: #090261;
+    transition: .5s;
+}
+.nav-bar ul li a.navlogin:hover{
+    background-color: #eee;
+    color: black;
+}
+.login-header{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: content;
+    padding-top: 60px;
+    margin-left: 210px;
+    align-content: center;
+    animation: slide 1s 1 initial linear ;
+}
+.login-header h1{
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.login-header p{
+    color: white;
+    margin-top: 20px;
+    opacity: .7;
+}
+.container{
+    min-height: calc(100vh - 40px * 2);
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+
+@keyframes slide {
+    0%{transform: translate(0,0)}
+    100%{transform: translate(1000px,0)}
+}
+
+.login-left{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: content;
+    padding-left: 250px;
+}
+
+.login-right{
+    display: flex;
+    justify-content: center;
+}
+.login-right img{
+    width: 100%;
+}
+
+.login-form{
+    width: 450px;
+    margin-left: 210px;
+    align-content: center;
+    animation: slide 1s 1 alternate-reverse linear ;
+}
+.login-content{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    
+}
+.login-footer{
+    display: flex;
+    gap: 30px;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+.login-footer a{
+    flex: 6;
+    gap: 15px;
+    background-color: #eee;
+    border-radius: 100px;
+    padding: .6rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .5s;
+}
+.login-footer a:hover{
+    background-color: black;
+    color: white;
+}
+.form-tem label:not(.checkboxLabel){
+    display: inline-block;
+    background-color: white;
+    margin-bottom: 10px;
+    position: absolute;
+    padding: 0 10px;
+    transform: translate(30px, -10px);
+    font-size: 14px;
+}
+input[type='email'],
+input[type='password']{
+    border: 1px solid black;
+    height: 55px;
+    padding: 0 2rem;
+    width: 100%;
+    outline: none;
+    transition: background .5s;
+    font-size: 18px;
+    border-radius: 100px;
+}
+.pass-key{
+    border: 1px solid black;
+    height: 55px;
+    padding: 0 2rem;
+    width: 100%;
+    outline: none;
+    transition: background .5s;
+    font-size: 18px;
+    border-radius: 100px;
+}
+.show{
+    display: block;
+    position: absolute;
+    margin-left: 380px;
+    bottom: 250px;
+    font-size: 15px;
+    color: black;
+    cursor: pointer;
+}
+label[for = email],
+label[for = password],
+label[for = text]{
+    font-size: 1.1rem;
+    padding-left: 20px;
+    font-weight: 4600;;
+}
+.checkbox{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    accent-color: black;
+}
+button{
+    border: none;
+    padding: 1rem;
+    height: 55px;
+    font-size: 18px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 30px;
+    transition: .5s;
+    animation: slide 1s 1 reverse linear ;
+}
+button:hover{
+    background:  grey;
+    color: rgb(255, 255, 255);
+}
+::placeholder{
+    color: grey;
+    font-size: 1rem;
+}
+
+
